@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APP_THI_TRAC_NGHIEM", "APP_THI_TRAC_NGHIEM\APP_THI_TRAC_NGHIEM.csproj", "{890ECD10-2AC7-4AF0-8290-5F8807603C59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{890ECD10-2AC7-4AF0-8290-5F8807603C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890ECD10-2AC7-4AF0-8290-5F8807603C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890ECD10-2AC7-4AF0-8290-5F8807603C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890ECD10-2AC7-4AF0-8290-5F8807603C59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83DD6BB6-05B0-4BBA-95B4-D9943828FBA8}
+	EndGlobalSection
+EndGlobal
