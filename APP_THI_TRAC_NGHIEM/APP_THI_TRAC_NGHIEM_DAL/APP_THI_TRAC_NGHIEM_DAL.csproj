@@ -50,21 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Account.cs" />
-    <Compile Include="Model\Attempt.cs" />
-    <Compile Include="Model\Exam.cs" />
-    <Compile Include="Model\ExamQuestion.cs" />
-    <Compile Include="Model\Feedback.cs" />
     <Compile Include="Model\Model1.cs" />
-    <Compile Include="Model\PerMission.cs" />
-    <Compile Include="Model\Question.cs" />
-    <Compile Include="Model\Result.cs" />
-    <Compile Include="Model\Setting.cs" />
-    <Compile Include="Model\Status.cs" />
-    <Compile Include="Model\Student.cs" />
-    <Compile Include="Model\StudentAnswer.cs" />
-    <Compile Include="Model\Subject.cs" />
-    <Compile Include="Model\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

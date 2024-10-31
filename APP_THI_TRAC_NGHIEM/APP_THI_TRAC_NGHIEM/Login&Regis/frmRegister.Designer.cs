@@ -174,7 +174,7 @@
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(282, 51);
             this.btLogin.TabIndex = 31;
-            this.btLogin.Text = "SigUp";
+            this.btLogin.Text = "SignUp";
             this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btSigUp_Click);
             // 
