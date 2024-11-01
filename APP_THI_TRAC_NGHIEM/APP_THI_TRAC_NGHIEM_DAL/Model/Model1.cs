@@ -89,11 +89,6 @@ namespace APP_THI_TRAC_NGHIEM_DAL.Model
                 .WithOptional(e => e.Question)
                 .WillCascadeOnDelete();
 
-            modelBuilder.Entity<Result>()
-                .HasMany(e => e.Attempts)
-                .WithOptional(e => e.Result)
-                .HasForeignKey(e => e.IdResult);
-
             modelBuilder.Entity<Status>()
                 .Property(e => e.StatusName)
                 .IsFixedLength();

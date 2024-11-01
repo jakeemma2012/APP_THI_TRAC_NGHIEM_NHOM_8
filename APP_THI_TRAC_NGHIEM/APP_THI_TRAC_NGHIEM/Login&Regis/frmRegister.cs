@@ -48,11 +48,15 @@ namespace APP_THI_TRAC_NGHIEM.Login_Regis
 
                     acc.Username = txtUsername.Text.Trim();
                     acc.Password = txtPassword.Text.Trim();
+                    acc.CreatedAt = DateTime.Now;
+                    acc.Role = 0;
+                    acc.StatusID = 1;
 
                     context.Accounts.Add(acc);
                     context.SaveChanges();
 
-                    MessageBox.Show("Đăng ký thành công!\nHãy quay lại trang đăng nhập nhé !");
+
+                    MessageBox.Show("Đăng ký thành công!\nHãy liên hệ với bộ phận quản lý để kích hoạt nhé !");
                     txtPassword.Text = string.Empty;
                     txtUsername.Text = string.Empty;
                 }

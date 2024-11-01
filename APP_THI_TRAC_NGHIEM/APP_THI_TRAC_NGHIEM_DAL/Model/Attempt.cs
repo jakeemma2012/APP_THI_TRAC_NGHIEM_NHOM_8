@@ -25,7 +25,5 @@ namespace APP_THI_TRAC_NGHIEM_DAL.Model
         public virtual Account Account { get; set; }
 
         public virtual Exam Exam { get; set; }
-
-        public virtual Result Result { get; set; }
     }
 }

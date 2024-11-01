@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using APP_THI_TRAC_NGHIEM.Function;
+using APP_THI_TRAC_NGHIEM.Login_Regis;
+using APP_THI_TRAC_NGHIEM.StudentFormExam;
 namespace APP_THI_TRAC_NGHIEM
 {
     internal static class Program
@@ -16,7 +18,7 @@ namespace APP_THI_TRAC_NGHIEM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmLogin());
         }
     }
 }

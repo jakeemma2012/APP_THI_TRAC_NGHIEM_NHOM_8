@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1285949-5BF6-47D5-A856-552F5EBF3150}</ProjectGuid>
+    <ProjectGuid>{06A7C6A2-3257-4AD7-B6ED-717393715323}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>APP_THI_TRAC_NGHIEM_DAL</RootNamespace>
@@ -37,25 +37,48 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Attempt.cs" />
+    <Compile Include="Model\Exam.cs" />
+    <Compile Include="Model\ExamQuestion.cs" />
+    <Compile Include="Model\Feedback.cs" />
     <Compile Include="Model\Model1.cs" />
+    <Compile Include="Model\PerMission.cs" />
+    <Compile Include="Model\Question.cs" />
+    <Compile Include="Model\Result.cs" />
+    <Compile Include="Model\Setting.cs" />
+    <Compile Include="Model\Status.cs" />
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Model\StudentAnswer.cs" />
+    <Compile Include="Model\Subject.cs" />
+    <Compile Include="Model\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
