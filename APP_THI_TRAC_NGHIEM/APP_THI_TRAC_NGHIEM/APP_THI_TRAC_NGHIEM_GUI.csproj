@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{890ECD10-2AC7-4AF0-8290-5F8807603C59}</ProjectGuid>
+    <ProjectGuid>{E78BFB06-DBE0-4581-A2E7-18A70ED6D7CA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>APP_THI_TRAC_NGHIEM</RootNamespace>
     <AssemblyName>APP_THI_TRAC_NGHIEM</AssemblyName>
@@ -33,8 +33,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,16 +67,102 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Function\frmCaThi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Function\frmCaThi.Designer.cs">
+      <DependentUpon>frmCaThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\frmCauHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\frmCauHoi.Designer.cs">
+      <DependentUpon>frmCauHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\frmKetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\frmKetQua.Designer.cs">
+      <DependentUpon>frmKetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\frmQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\frmQuanLy.Designer.cs">
+      <DependentUpon>frmQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\frmThiSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\frmThiSinh.Designer.cs">
+      <DependentUpon>frmThiSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login&amp;Regis\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login&amp;Regis\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login&amp;Regis\frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login&amp;Regis\frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentFormExam\frmEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFormExam\frmEnd.Designer.cs">
+      <DependentUpon>frmEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFormExam\frmLobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFormExam\frmLobby.Designer.cs">
+      <DependentUpon>frmLobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFormExam\frmThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentFormExam\frmThi.Designer.cs">
+      <DependentUpon>frmThi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Function\frmCaThi.resx">
+      <DependentUpon>frmCaThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\frmCauHoi.resx">
+      <DependentUpon>frmCauHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\frmKetQua.resx">
+      <DependentUpon>frmKetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\frmQuanLy.resx">
+      <DependentUpon>frmQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\frmThiSinh.resx">
+      <DependentUpon>frmThiSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login&amp;Regis\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login&amp;Regis\frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +172,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentFormExam\frmEnd.resx">
+      <DependentUpon>frmEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFormExam\frmLobby.resx">
+      <DependentUpon>frmLobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentFormExam\frmThi.resx">
+      <DependentUpon>frmThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +194,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APP_THI_TRAC_NGHIEM_BUS\APP_THI_TRAC_NGHIEM_BUS.csproj">
+      <Project>{903546e0-c3e8-4c74-bc38-2b6163d7f8cc}</Project>
+      <Name>APP_THI_TRAC_NGHIEM_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APP_THI_TRAC_NGHIEM_DAL\APP_THI_TRAC_NGHIEM_DAL.csproj">
+      <Project>{06a7c6a2-3257-4ad7-b6ed-717393715323}</Project>
+      <Name>APP_THI_TRAC_NGHIEM_DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
